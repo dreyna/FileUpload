@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/09/2015 09:17:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidades.Archivos" table="archivos" catalog="bd_archivos" optimistic-lock="version">
+        <id name="idarchivos" type="java.lang.Integer">
+            <column name="idarchivos" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="ruta" type="string">
+            <column name="ruta" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
